@@ -1,0 +1,18 @@
+{
+    "name": "streamz",
+    "version": "1.0.0",
+    "description": "use your discord bot as a remote to stream to discord",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "404invalid-user",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^13.8.0",
+        "dotenv": "^16.0.1",
+        "puppeteer-extra": "^3.2.3",
+        "puppeteer-extra-plugin-adblocker": "^2.12.0",
+        "puppeteer-extra-plugin-stealth": "^2.9.0"
+    }
+}
