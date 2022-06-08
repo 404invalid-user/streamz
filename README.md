@@ -25,12 +25,17 @@ to stream to discord you will need to make an alt user account download the app 
 ## commands
 
 `v!play <url>` - will navigate the browser to that url.
+
 `v!f` - makes youtube fullscreen.
+
 `v!t` - makes youtube cinema mode.
+
 `v!k`, `v!play`, `v!pause` - will toggle play pause for youtube.
 
-  <br>
-  
+<br>
+
 ## contact and support for problems
+
 discord: https://discord.gg/RYQbmj7
+
 email: invaliduser@bruvland.com
