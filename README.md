@@ -30,7 +30,7 @@ to stream to discord you will need to make an alt user account download the app 
 
 `v!t` - makes youtube cinema mode.
 
-`v!k`, `v!play`, `v!pause` - will toggle play pause for youtube.
+`v!k`, `v!pause` - will toggle play pause for youtube.
 
 <br>
 
