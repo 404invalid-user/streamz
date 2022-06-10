@@ -62,7 +62,7 @@ client.on('messageCreate', async message => {
         return message.channel.send("it has been done")
     }
 
-    if (args[0] == 'k' || args[0] == 'play' || args[0] == 'pause') {
+    if (args[0] == 'k' || args[0] == 'pause') {
         const a = await browserApi.togglePlayPause();
         return message.channel.send("stream is now " + a.state)
     }

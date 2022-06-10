@@ -61,7 +61,7 @@ module.exports.youtubeCinemaModeExit = async() => {
 module.exports.togglePlayPause = async() => {
     // ytp-play-button ytp-button
     const url = this.getUrl(page.url());
-    if (url.domain !== 'youtube.com' || url.path[0].split('?')[0].toLowerCase() !== 'watch') {
+    if (url.domain == 'youtube.com' && url.path[0].split('?')[0].toLowerCase() == 'watch') {
         const ppbtn = await page.evaluate('document.querySelector(".ytp-play-button.ytp-button").getAttribute("title")');
         await page.click('.ytp-play-button.ytp-button');
 
@@ -76,7 +76,10 @@ module.exports.togglePlayPause = async() => {
                 type: 'youtube'
             }
         }
-
+    }
+    return {
+        state: 'null',
+        type: 'null'
     }
 
 }
