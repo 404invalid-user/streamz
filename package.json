@@ -4,7 +4,8 @@
     "description": "use your discord bot as a remote to stream to discord",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ."
     },
     "author": "404invalid-user",
     "license": "MIT",
