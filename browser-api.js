@@ -11,6 +11,7 @@ module.exports.start = async() => {
     browser = await puppeteer.launch({
         headless: false,
         defaultViewport: null, //Defaults to an 800x600 viewport
+        ignoreDefaultArgs: ["--enable-automation"],
         args: [
             '--start-fullscreen' // you can also use '--start-maximized'
         ]
