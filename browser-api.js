@@ -11,9 +11,9 @@ module.exports.start = async() => {
     browser = await puppeteer.launch({
         headless: false,
         defaultViewport: null, //Defaults to an 800x600 viewport
-        ignoreDefaultArgs: ["--enable-automation"],
         args: [
-            '--start-fullscreen' // you can also use '--start-maximized'
+            '--start-fullscreen', // you can also use '--start-maximized'
+            '--app=https://www.google.com/'
         ]
     });
     const pages = await browser.pages()
@@ -104,8 +104,12 @@ module.exports.getUrl = (url) => {
 module.exports.open = async(link, cookies) => {
     //get url info
     const url = this.getUrl(link);
-
-    await page.goto(link);
+    try {
+        await page.goto(link);
+    } catch (err) {
+        console.log(err);
+        return;
+    }
     if (cookies) {
         await page.setCookie(...cookies);
     }
