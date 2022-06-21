@@ -1,0 +1,6 @@
+ - [ ] - v!home command
+ - [ ] - v!stop command
+ - [ ] - youtube adblocker plugin
+ - [ ] - v!time (timestamp) command
+ - [ ] - queue system 
+ - [ ] - option to disable autoplay
